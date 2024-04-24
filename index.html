@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplazamiento para el almacenamiento temporal centralizado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Emplazamiento para el almacenamiento temporal centralizado</h1>
+    </header>
+    <p>Para la selección de criterios que permitan encontrar el sitio más favorable para el emplazamiento del vertedero se han adoptado los criterios que utiliza la IAEA (agencia internacional de la energía atómica).</p>
+        <p>El primer conjunto de criterios está relacionado con el impacto potencial de los peligros naturales sobre la seguridad de la instalación nuclear.</p>
+        <ul>
+            <li><strong>Criterio de Tipo de Suelo (Litología):</strong> La herramienta Select by Layer Attributes se empleó para filtrar los datos geoespaciales que correspondientes a materiales paleozoicos/proterozoicos que son materiales metamórficos, muy impermeables que cumplen con la normativa para la instalación del vertedero.</li>
+            <li><strong>Criterio de terremotos:</strong> Se selecciona los terremotos de mayor importancia mayores a 3.5 de magnitud ya que estos son los que generan daños menores en estructuras.</li>
+        </ul>
+        <p>El segundo conjunto de criterios está relacionado con las posibles repercusiones en el medio ambiente:</p>
+        <ul>
+            <li><strong>Criterio de proximidad a ríos, y red Natura:</strong> Se utilizó la distancia euclidiana para calcular la proximidad de ríos principales y áreas de la Red Natura.</li>
+        </ul>
+        <p>El tercer grupo de criterios está relacionado principalmente con la viabilidad de la aplicación del plan de emergencia de la instalación nuclear:</p>
+        <ul>
+            <li><strong>Criterio de Población Mínima (Evacuación):</strong> Se definió una población mínima de 10,000 habitantes como criterio para la selección del sitio.</li>
+            <li><strong>Rutas:</strong> Se clasifica por orden a 3000 metros de una ruta principal.</li>
+        </ul>
+        <p>ModelBuilder final: Se utilizaron las herramientas de Merge, Dissolve y Multipart To Singlepart para combinar y simplificar las geometrías de los resultados, lo que permite un análisis detallado a cada área apta por separado.</p>
+        <p>Modelo empleado: se realizó bajo el modelo visual de ModelBuilder, dicho modelo encadena secuencias de procesos y herramientas de geoprocesamiento, utilizando la salida de un proceso como la entrada de otro.</p>
+    <main>
+        <iframe src="https://bi0ska.github.io/TFM-EB/" width="500px" height="1000px"></iframe>
+    </main>
+
+</body>
+</html>
